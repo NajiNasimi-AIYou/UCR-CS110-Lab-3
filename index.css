@@ -1,0 +1,257 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+.box {
+  height: 500px;
+  border: 1px solid black;
+}
+
+/* NavBar itself */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  z-index: 100;
+}
+
+.navbar-inner {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+}
+
+/* Menu items in Left of NavBar */
+.navbar-nav {
+  flex-grow: 1;
+}
+
+/* Twitter Logo in NavBar */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#twitter-logo {
+  width: 28px;
+  height: 28px;
+  padding-top: 8px;
+}
+
+/* Twitter Button in NavBar */
+.nav-tweet {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+#TwitterButton {
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#TwitterButton:hover {
+  background-color: #0c84d2;
+  text-decoration: none;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  max-width: 1190px;
+  margin: 56px auto;
+  padding-top: 60px;
+  display: flex;
+}
+
+/* Content Left */
+.content-left {
+  margin-right: 10px;
+  width: 290px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: fit-content;
+  flex-shrink: 0;
+}
+
+.cover-picture {
+  position: relative;
+  overflow: hidden;
+  width: 290px;
+  height: 100px;
+  background-color: black;
+}
+
+.cover-picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.69);
+  max-height: 100%;
+  max-width: 90%;
+}
+
+.profile{
+  margin-top: -30px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  font-size: 1.2em;
+  background-image: linear-gradient(to bottom, black 25%, white 25%);
+}
+
+.profile img {
+  margin-top: -12px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  border: 3px solid white;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.profile-details p {
+  margin-bottom: 0px;
+}
+
+.profile-stats {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  color: #657786;
+  background-color: white;
+  padding: 1rem;
+}
+
+.stat {
+  text-align: left;
+  font-size: 18px;
+}
+
+.stat p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.stat-number {
+  color: #1da1f2;
+}
+
+/* Content Center */
+.content-center {
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  height: fit-content;
+}
+
+.content-center pre {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.content-center img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  transform: scale(1.2);
+}
+
+.post-number {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  margin-top: 2%;
+}
+
+.post-number p {
+  margin-bottom: 0;
+}
+
+.post-number:not(:last-child) {
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 1rem;
+}
+
+/* Content Right */
+.content-right {
+  margin-left: 10px;;
+  width: 290px;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: fit-content;
+  flex-shrink: 0;
+}
+
+.suggested-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.suggested-user img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user-details p {
+  margin-bottom: 0;
+}
+
+.user-details strong {
+  font-weight: bold;
+}
+
+.user-details span {
+  color: #657786;
+}
+
+.suggested-user:not(:last-child) {
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.follow-btn {
+  border: 2px solid #1da1f2;
+  background-color: transparent;
+  color: #1da1f2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  margin-top: 4px;
+  width: 80px;
+  text-align: center;
+}
+
+.follow-btn:hover {
+  background-color: #1da1f2;
+  color: white;
+}
