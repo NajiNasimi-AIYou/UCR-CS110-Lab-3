@@ -1,0 +1,68 @@
+/* NavBar itself */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+.navbar-inner {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+}
+
+/* Menu items in Left of NavBar */
+.navbar-nav {
+  flex-grow: 1;
+}
+
+/* Twitter Logo in NavBar */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#twitter-logo {
+  width: 28px;
+  height: 28px;
+  padding-top: 8px;
+}
+
+/* Twitter Button in NavBar */
+.nav-tweet {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+#TwitterButton {
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#TwitterButton:hover {
+  background-color: #0c84d2;
+  text-decoration: none;
+}

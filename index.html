@@ -6,109 +6,156 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Manual CSS-->
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="searchBar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/body.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles/left.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles/center.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles/right.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/searchBar.css">
+
+    <!-- FA Search CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <div class="navbar-inner">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContents">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active h5" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link h5" href="#">Moments</a>
-            <a class="nav-item nav-link h5" href="#">Notifications</a>
-            <a class="nav-item nav-link h5" href="#">Messages</a>
-          </div>
-      </div>
-
-      <div class="nav-center">
-        <img id="twitter-logo" src="images/twitter-logo.png" alt="Image of the Twitter logo, which is a small blue Twitter bird">
-      </div> 
-
-      <div class="nav-tweet">
-        <button id="TwitterButton">Tweet</button>
-      </div>
-    </div>
-  </nav>
-  
-
   <body>
+    <header class="header">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-inner">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarContents">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active h5" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link h5" href="#">Moments</a>
+                <a class="nav-item nav-link h5" href="#">Notifications</a>
+                <a class="nav-item nav-link h5" href="#">Messages</a>
+              </div>
+          </div>
+    
+          <div class="nav-center">
+            <img id="twitter-logo" src="images/twitter-logo.png" alt="Image of the Twitter logo, which is a small blue Twitter bird">
+          </div> 
+          
+          <div class="nav-tweet">
+            <button id="TwitterButton">Tweet</button>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- TODO: Create HTML elements for Twitter mockup inside body -->
     <!-- Breaking apart this lab into multiple divs to create organization-->
-    <div class="content-wrapper">
-      <!-- This main div will contain the full body items. In our case it will be the 3 other divs-->
-      <div class="content-left">
-        <!-- Div 1: Cover Picture -->
-        <div class="cover-picture">
-            <img src="images/ratatouille-banner.png" alt="Ratatouille's cover picture">
-        </div>
-
-        <!-- Div 2: Profile -->
-        <div class="profile">
-            <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture">
-            <div class="profile-details">
-                <p><strong><u>Remy</u></strong></p>
-                <p><span>@remy</span></p>
-            </div>
-        </div>
-
-        <!-- Div 3: Profile Stats -->
-        <div class="profile-stats">
-            <div class="stat">
-                <p>Tweets</p>
-                <p class="stat-number">5049</p>
-            </div>
-            <div class="stat">
-                <p>Following</p>
-                <p class="stat-number">324</p>
-            </div>
-            <div class="stat">
-                <p>Followers</p>
-                <p class="stat-number">809</p>
-            </div>
-        </div>
-      </div>
-
-      <div class="content-center">
-        <div class="search-container">
-          <form action="#">
-            <input type="text" placeholder="Search Twitter">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>    
-        <!-- For posts -->
-        <div class="post-number">
-          <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-          <div class="user-post">
-              <p><strong>Remy</strong> <span>@remy Nov 19</span></p>
-              <pre>I'm taking this class called CS110 and the TAs are all so <strong>cool</strong>!</pre>
+    <main class="main">
+      <div class="content-wrapper">
+        <!-- This main div will contain the full body items. In our case it will be the 3 other divs-->
+        <div class="content-left">
+          <!-- Div 1: Cover Picture -->
+          <div class="cover-picture">
+              <img src="images/ratatouille-banner.png" alt="Ratatouille's cover picture">
+          </div>
+  
+          <!-- Div 2: Profile -->
+          <div class="profile">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture">
+              <div class="profile-details">
+                  <p><strong><u>Remy</u></strong></p>
+                  <p><span>@remy</span></p>
+              </div>
+          </div>
+  
+          <!-- Div 3: Profile Stats -->
+          <div class="profile-stats">
+              <div class="stat">
+                  <p>Tweets</p>
+                  <p class="stat-number">5049</p>
+              </div>
+              <div class="stat">
+                  <p>Following</p>
+                  <p class="stat-number">324</p>
+              </div>
+              <div class="stat">
+                  <p>Followers</p>
+                  <p class="stat-number">809</p>
+              </div>
           </div>
         </div>
-      </div>
-
-      <!-- Who to Follow -->
-      <div class="content-right d-none d-lg-block">
-        <h3>Who to follow</h3>
-        <div class="suggested-user">
-            <img src="images/linguini.png" alt="Linguini's profile picture" width="50" height="50">
-            <div class="user-details">
-                <p><strong>Linguini</strong> <span>@linguini</span></p>
-                <button class="btn follow-btn">Follow</button>
+        
+        <div class="content-center">  
+          <div class="search-container">
+            <form id="saerchForm" action="#">
+              <input id="searchBar" type="text" placeholder="Search Tweets">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <!-- For posts -->
+          <div class="posts">
+            <div class="post-number post" data-timestamp="2023-11-19 12:00:00">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-post">
+                  <p><strong>Remy</strong> <span>@remy 2023-11-19 12:00:00</span></p>
+                  <pre>I'm taking this class called CS110 and the TAs are all so <strong>cool</strong>!</pre>
+              </div>
             </div>
+            <div class="post-number post" data-timestamp="2023-11-19 13:00:00">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-post">
+                  <p><strong>Remy</strong> <span>@remy 2023-11-19 13:00:00</span></p>
+                  <pre>I'm taking this class called CS120 and the TAs are all so <strong>cool</strong>!</pre>
+              </div>
+            </div>
+            <div class="post-number post" data-timestamp="2023-11-19 11:00:00">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-post">
+                  <p><strong>Remy</strong> <span>@remy 2023-11-19 11:00:00</span></p>
+                  <pre>I'm taking this class called CS110 and the TAs are all so <strong>cool</strong>!</pre>
+              </div>
+            </div>
+            <div class="post-number post" data-timestamp="2023-11-19 10:00:00">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-post">
+                  <p><strong>Remy</strong> <span>@remy 2023-11-19 10:00:00</span></p>
+                  <pre>I'm taking this class called CS120 and the TAs are all so <strong>cool</strong>!</pre>
+              </div>
+            </div>
+            <div class="post-number post" data-timestamp="2023-11-19 14:00:00">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-post">
+                  <p><strong>Remy</strong> <span>@remy 2023-11-19 14:00:00</span></p>
+                  <pre>I'm taking this class called CS130 and the TAs are all so <strong>cool</strong>!</pre>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="suggested-user">
-            <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-            <div class="user-details">
-              <p><strong>Ratatouille</strong> <span>@ratatouille</span></p>
-              <button class="btn follow-btn">Follow</button>
-          </div>          
+  
+        <!-- Who to Follow -->
+        <div class="content-right d-none d-lg-block">
+          <h3>Who to follow</h3>
+          <div class="suggested-user">
+              <img src="images/linguini.png" alt="Linguini's profile picture" width="50" height="50">
+              <div class="user-details">
+                  <p><strong>Linguini</strong> <span>@linguini</span></p>
+                  <button class="btn follow-btn">Follow</button>
+              </div>
+          </div>
+          <div class="suggested-user">
+              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
+              <div class="user-details">
+                <p><strong>Ratatouille</strong> <span>@ratatouille</span></p>
+                <button class="btn follow-btn">Follow</button>
+            </div>          
+          </div>
         </div>
+  
       </div>
+    </main>
 
-    </div>
+    <footer class="footer">
+    </footer>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/sort.js"></script>
   </body>
 </html>
