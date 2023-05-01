@@ -1,0 +1,37 @@
+.search-container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  input[type=text] {
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  button[type=submit] {
+    padding: 10px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #0E71C8;
+  }
+  
+  .fa-search {
+    font-size: 16px;
+  }
+  

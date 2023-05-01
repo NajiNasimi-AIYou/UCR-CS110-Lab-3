@@ -1,0 +1,48 @@
+/* Content Center */
+.content-center {
+    flex-grow: 1;
+    padding: 0 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.posts {
+    margin-top: 80px;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 68vh;
+    min-height: 0px;
+}
+
+.posts pre {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Set the font family */
+    font-size: 18px; /* Set the font size */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks, but allow wrapping */
+    margin: 0; /* Remove the margin */
+    margin-bottom: 0; /* Remove the bottom margin */
+}
+
+.posts img {
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 1rem; /* Add space to the right of the image */
+    transform: scale(1); /* Scale the image up */
+}
+
+.post-number {
+    display: flex; /* Use flex layout for alignment and distribution of items */
+    align-items: flex-start; /* Align items at the start of the container */
+    margin-bottom: 1rem; /* Add space below each post */
+    margin-top: 2%; /* Add space above each post */
+}
+
+.post-number p {
+    margin-bottom: 0; /* Remove the bottom margin */
+}
+
+.post-number:not(:last-child) {
+    border-bottom: 1px solid #e1e8ed; /* Add a border at the bottom of each post, except the last one */
+    padding-bottom: 1rem; /* Add padding at the bottom of each post */
+}
