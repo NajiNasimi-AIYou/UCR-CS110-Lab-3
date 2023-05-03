@@ -1,17 +1,11 @@
-function formatTimestamps() {
-    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    
-    let userPosts = document.getElementsByClassName('user-post');
-
-    for (let i = 0; i < userPosts.length; i++) {
-        let timestamp = new Date(userPosts[i].getAttribute('data-timestamp'));
-        let month = monthNames[timestamp.getMonth()];
-        let day = timestamp.getDate();
-        let formattedDate = `${month} ${day}`;
-        
-        userPosts[i].querySelector('span').textContent = formattedDate;
-    }
+function formatTimestamps(date, span) {
+    console.log(date);
+    const timestamp = new Date(date);
+    console.log(timestamp);
+    const formattedDate = timestamp.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+    span.innerHTML = " " + formattedDate;
+    console.log(formattedDate);
 }
 
-// Call the formatTimestamps function to format and display the timestamps on page load
-formatTimestamps();
+// Wait for the DOM to be fully loaded before running the function
+document.addEventListener('DOMContentLoaded', formatTimestamps);

@@ -12,5 +12,6 @@ function sortTweets() {
     });
 }
 
+
 // Call the sortTweets function to sort the tweets on page load
 sortTweets();

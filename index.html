@@ -15,9 +15,11 @@
     <link rel="stylesheet" type="text/css" href="styles/main_styles/right.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/searchBar.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/checkbox.css">
     <!-- FA Search CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Jquery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -90,44 +92,14 @@
               <input id="searchBar" type="text" placeholder="Search Tweets">
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
+            <div class="checkbox-container">
+              <input type="checkbox" name="TT_sticky_header" id="TT_sticky_header_function" value="{TT_sticky_header}" onchange="stickyheaddsadaer(this)"/>
+              <label for="TT_sticky_header" class="chkbox">Live (Off/On)</label>
+            </div>
           </div>
           <!-- For posts -->
           <div class="posts">
-            <div class="post-number post" data-timestamp="2023-11-19 12:00:00">
-              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-              <div class="user-post">
-                  <p><strong>Remy</strong> <span>@remy 2023-11-19 12:00:00</span></p>
-                  <pre>I'm taking this class called CS110 and the TAs are all so <strong>cool</strong>!</pre>
-              </div>
-            </div>
-            <div class="post-number post" data-timestamp="2023-11-19 13:00:00">
-              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-              <div class="user-post">
-                  <p><strong>Remy</strong> <span>@remy 2023-11-19 13:00:00</span></p>
-                  <pre>I'm taking this class called CS120 and the TAs are all so <strong>cool</strong>!</pre>
-              </div>
-            </div>
-            <div class="post-number post" data-timestamp="2023-11-19 11:00:00">
-              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-              <div class="user-post">
-                  <p><strong>Remy</strong> <span>@remy 2023-11-19 11:00:00</span></p>
-                  <pre>I'm taking this class called CS110 and the TAs are all so <strong>cool</strong>!</pre>
-              </div>
-            </div>
-            <div class="post-number post" data-timestamp="2023-11-19 10:00:00">
-              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-              <div class="user-post">
-                  <p><strong>Remy</strong> <span>@remy 2023-11-19 10:00:00</span></p>
-                  <pre>I'm taking this class called CS120 and the TAs are all so <strong>cool</strong>!</pre>
-              </div>
-            </div>
-            <div class="post-number post" data-timestamp="2023-11-19 14:00:00">
-              <img src="images/ratatouille.jpg" alt="Ratatouille's profile picture" width="50" height="50">
-              <div class="user-post">
-                  <p><strong>Remy</strong> <span>@remy 2023-11-19 14:00:00</span></p>
-                  <pre>I'm taking this class called CS130 and the TAs are all so <strong>cool</strong>!</pre>
-              </div>
-            </div>
+            
           </div>
         </div>
   
@@ -155,7 +127,13 @@
 
     <footer class="footer">
     </footer>
+
     <script src="scripts/search.js"></script>
     <script src="scripts/sort.js"></script>
+    <script src="scripts/formatTime.js"></script>
+    <script src="scripts/calling.js"></script>
+    <script src="scripts/displayTweet.js"></script>
+    <script src="scripts/fetch.js"></script>
+    <script src="scripts/checkbox.js"></script>
   </body>
 </html>

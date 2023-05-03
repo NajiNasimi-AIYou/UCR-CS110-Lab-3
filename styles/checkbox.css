@@ -1,0 +1,15 @@
+/*
+          <div class="search-container">
+            <form id="saerchForm" action="#">
+              <input id="searchBar" type="text" placeholder="Search Tweets">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <input type="checkbox" name="TT_sticky_header" id="TT_sticky_header_function" value="{TT_sticky_header}" onchange="stickyheaddsadaer(this)"/>
+          </div>
+*/
+
+.chkbox {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
